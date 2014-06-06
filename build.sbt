@@ -2,7 +2,7 @@ organization := "org.goldenport"
 
 name := "goldenport-scalatest-lib"
 
-version := "1.0.0"
+version := "1.0.1"
 
 scalaVersion := "2.10.3"
 // crossScalaVersions := Seq("2.9.2", "2.9.1")
@@ -11,7 +11,7 @@ scalacOptions += "-deprecation"
 
 scalacOptions += "-unchecked"
 
-libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.0.5"
+libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.0.6"
 
 libraryDependencies += "org.scalatest" % "scalatest_2.10" % "2.0"
 
