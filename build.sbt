@@ -2,20 +2,23 @@ organization := "org.goldenport"
 
 name := "goldenport-scalatest-lib"
 
-version := "1.1.0"
+version := "2.0.0"
 
-scalaVersion := "2.10.3"
-// crossScalaVersions := Seq("2.9.2", "2.9.1")
+scalaVersion := "2.11.6"
+
+crossScalaVersions := Seq("2.11.6", "2.10.5")
 
 scalacOptions += "-deprecation"
 
 scalacOptions += "-unchecked"
 
-libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.1.0"
+incOptions := incOptions.value.withNameHashing(true)
 
-libraryDependencies += "org.scalatest" % "scalatest_2.10" % "2.0"
+libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.1.2"
 
-libraryDependencies += "junit" % "junit" % "4.8" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4"
+
+libraryDependencies += "junit" % "junit" % "4.12"
 
 //
 publishTo := Some(Resolver.file("asamioffice", file("target/maven-repository")))
